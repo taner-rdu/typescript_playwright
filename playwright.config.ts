@@ -5,7 +5,7 @@ export default defineConfig({
   fullyParallel: true,
   reporter: 'html',
   use: {
-    baseURL: 'http://uitestingplayground.com',
+    baseURL: 'https://practice.expandtesting.com',
     trace: 'on-first-retry',
   },
   projects: [
