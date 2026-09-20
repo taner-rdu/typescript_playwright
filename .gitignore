@@ -10,3 +10,8 @@ yarn-error.log*
 
 .vscode/*
 .DS_Store
+
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
