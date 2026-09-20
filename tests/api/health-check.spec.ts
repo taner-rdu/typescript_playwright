@@ -11,3 +11,17 @@ test('notes api health check', async ({ request }) => {
     message: 'Notes API is Running',
   })
 })
+
+test('echo returns a greeting', async ({ request }) => {
+  const payload = {
+    name: 'Tawfik',
+  }
+
+  const response = await request.post('/api/echo', {
+    data: payload,
+  })
+  expect(response.status()).toBe(200)
+
+  const body = await response.json()
+  expect(body).toEqual({ message: `Hi ${payload.name}` })
+})
